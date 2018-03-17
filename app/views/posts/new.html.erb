@@ -1,0 +1,11 @@
+<h1>New Article</h1>
+
+<%= simple_form_for (@post) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :category %>
+  <%= f.file_field :picture %>
+  <%= f.input :content %>
+
+  <%= f.submit %>
+  <%= link_to 'Back', posts_path %>
+<% end %>

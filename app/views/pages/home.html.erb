@@ -1,4 +1,17 @@
 <%= render 'shared/navbar' %>
 <div id="banner">
   <div class="wrapper" style="background-image: url(<%= image_path 'banner.png'%>)">
-  <h1>Football</h1>
+
+    <div class="banner-content">
+      <h1>Dany's Blog</h1>
+      <p>Publish and read the best Articles !</p>
+    </div>
+  </div>
+
+    <div>
+      <p><%= link_to "Add a new article", new_post_path%></p>
+      <p><%= link_to "All articles", posts_path%></p>
+    </div>
+
+
+    <h2>Last articles</h2>
