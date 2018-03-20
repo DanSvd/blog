@@ -2,13 +2,13 @@
 
 <ul>
   <% @posts.each do |post| %>
-    <p>Title :<%= post.title %></p>
+    <p>Title :<%= link_to post.title, post_path(post) %> </p>
     </%>
     <p>Category :<%= post.category%></p>
-  <% end %>
+      <% end %>
     <ul>
 </ul>
 
-<%= link_to 'Back', posts_path %>
+<%= link_to 'Back', root_path %>
 
 
